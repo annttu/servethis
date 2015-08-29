@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ABSOLUTE_PATH=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)/
+
+. ${ABSOLUTE_PATH}/env/bin/activate
+${ABSOLUTE_PATH}/servethis.py $@
